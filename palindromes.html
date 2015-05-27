@@ -9,18 +9,17 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center page-header">Pig Latin Translator</h1>
-      <form id="translate">
+      <h1 class="text-center page-header">Palindrome Checker</h1>
+      <form id="palindrome">
         <div class="form-group">
-          <label for="input_text">What would you like to translate?</label>
+          <label for="input_text">Is this a Palindrome?</label>
           <input type="text" name="input_text" id="input_text" class="form-control">
         </div>
-        <button name="submit" class="btn btn-success">Translate!</button>
+        <button name="submit" class="btn btn-success">Find Out!</button>
       </form>
       <br>
       <div class="results">
-        <p class="lead">Original: <span class="entered_text"></span></p>
-        <p class="lead">Pig Latin: <span class="translated_text"></span></p>
+        <p class="lead">It is <span class="verdict"></span> a palindrome!</p>
       </div>
     </div>
   </body>

@@ -3,7 +3,7 @@ describe('palindrome', function() {
   //   var word = "Hello";
   //   expect(palindrome(word)).to.equal("olleh");
   // });
-  //
+
   it('will return true if the input word is a palindrome', function() {
     var word = "Racecar";
     expect(palindrome(word)).to.equal(true);

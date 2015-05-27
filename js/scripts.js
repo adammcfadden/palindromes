@@ -4,3 +4,19 @@ var palindrome = function(input) {
   var reverseInput = input.split("").reverse().join("");
   return input === reverseInput;
 }
+
+$(document).ready(function() {
+  $("form#palindrome").submit(function(event) {
+    $(".verdict").empty();
+
+    var input = $("input#input_text").val();
+    var verdict = palindrome(input);
+
+    if (!(verdict)) {
+      $(".verdict").text("not");
+    }
+    
+    $(".results").show();
+    event.preventDefault();
+  });
+});
